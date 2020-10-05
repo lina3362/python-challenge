@@ -2,7 +2,7 @@
 import os
 import csv
 path = os.path.join("..","Resources","budget_data.csv")
-outputFile = os.path.join("..","Resources","PyBank.txt")
+Output = os.path.join("..","Resources","Output.txt")
 
 #variables
 current = 0
@@ -42,7 +42,7 @@ with open(path) as file:
 
     difference = sum(totalchange)/(len(totalchange)-1)
 
-
+# Print out the results
 print("Financial Analysis")
 print("-----------------------")
 print("Total Months:", month_count)
@@ -52,17 +52,13 @@ print("Greatest Increase in Profit:",Profitdate,{Highest_profit[1]})
 print("Greatest Decrease in Profit:",Lossdate,{Lowest_profit[1]})
 
 # output to a text file
-with open(outputFile, "w") as txt:
-  print(textFile)
-      txt.write("Total Months:"+ str(month_count))
-      txt.write("\n")
-      txt.write("Total:"+ "$" + str(totalrev))
-      txt.write("\n")
-      txt.write("Average Change:"+ "$" + str(month_count))
-      txt.write("\n")
-      txt.write("Greatest Increase in Profit:"+ str(Profitdate) + str(Highest_profit[1])
-      txt.write("\n")
-      txt.write("Greatest Decrease in Profit:"+ str(Lossdate) + str(Lowest_profit))
-      
+with open("Output.txt", "w") as text_file:
+  print("Financial Analysis", file=text_file)
+  print("----------------------------", file=text_file)
+  print(f"Total Months: {month_count}", file=text_file)
+  print(f"Total: ${round(totalrev,2)}", file=text_file)
+  print(f"Average Change: ${round(difference,2)}", file=text_file)
+  print(f"Greatest Increase in Profits: {Profitdate} ({round(Highest_profit,2)})", file=text_file)
+  print(f"Greatest Decrease in Profits: {Lossdate} ({round(Lowest_profit,2)})", file=text_file)  
 
   

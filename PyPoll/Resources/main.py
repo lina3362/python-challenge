@@ -47,7 +47,7 @@ elif (winnercount == licount):
     winner = "Li"
 elif (winnercount == otooleycount):
     winner = "O'Tooley"
-
+# print out the results
 print("Election Results")
 print("-----------------------")
 print("Total Votes:", totalcount)
