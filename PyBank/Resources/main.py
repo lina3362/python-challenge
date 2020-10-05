@@ -61,4 +61,3 @@ with open("Output.txt", "w") as text_file:
   print(f"Greatest Increase in Profits: {Profitdate} ({round(Highest_profit,2)})", file=text_file)
   print(f"Greatest Decrease in Profits: {Lossdate} ({round(Lowest_profit,2)})", file=text_file)  
 
-  

@@ -62,14 +62,14 @@ print("------------------------")
 
 # Output a textfile
 with open("Output.txt", "w") as text_file:
-    print("Election Results", file=text_file)
-    print("-------------------------", file=text_file)
-    print(f"Total Votes: {totalcount}", file=text_file)
-    print("-------------------------", file=text_file)
-    print(f"Khan: {round(khanpercent, 3)}% ({khancount})", file=text_file)
-    print(f"Correy: {round(correypercent, 3)}% ({correycount})", file=text_file)
-    print(f"Li: {round(lipercent, 3)}% ({licount})", file=text_file)
-    print(f"O'Tooley: {round(otooleypercent, 3)}% ({otooleycount})", file=text_file)
-    print("-------------------------", file=text_file)
-    print(f"Winner: {winner}", file=text_file)
-    print("-------------------------", file=text_file
+  print("Election Results", file=text_file)
+  print("-------------------------", file=text_file)
+  print(f"Total Votes: {totalcount}", file=text_file)
+  print("-------------------------", file=text_file)
+  print(f"Khan: {round(khanpercent, 3)}% ({khancount})", file=text_file)
+  print(f"Correy: {round(correypercent, 3)}% ({correycount})", file=text_file)
+  print(f"Li: {round(lipercent, 3)}% ({licount})", file=text_file)
+  print(f"O'Tooley: {round(otooleypercent, 3)}% ({otooleycount})", file=text_file)
+  print("-------------------------", file=text_file)
+  print(f"Winner: {winner}", file=text_file)
+  print("-------------------------", file=text_file
